@@ -1,0 +1,6 @@
+var num = new Number(222.3)
+var str = new String("Hello")
+console.log(num)
+console.log(num.valueOf())
+console.log(str)
+console.log(str.valueOf())

@@ -1,4 +1,4 @@
-const obj = { name: 'Alice', greet: function() { return 'Hello'; } };
+const obj = { name: 'Alice', greet: function() { return 'Hello'; } }
 console.log(obj)
 console.log(JSON.stringify(obj));  // Output: '{"name":"Alice"}'
 
