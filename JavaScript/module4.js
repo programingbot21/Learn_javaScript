@@ -1,4 +1,4 @@
-export class  user{
+ class  user{
     constructor(name, age){
         this.name = name;
         this.age = age;
@@ -14,7 +14,7 @@ export class  user{
         return this.courselist
     }
 }
-
+export {user}
 // // const stu = user('Raj ' , 34)
 
 // module.exports = user;
