@@ -1,0 +1,15 @@
+const mySet = new Set()
+console.log(mySet)
+
+mySet.add('this')
+mySet.add('Orange')
+mySet.add(27)
+mySet.add('Black')
+console.log(mySet)
+// console.log(mySet.size)
+// console.log(mySet.has('this'))
+
+// mySet.delete('this')
+// console.log(mySet)
+mySet.clear()
+console.log(mySet)
