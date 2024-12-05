@@ -1,9 +1,11 @@
-let a = '102 + 203';
-console.log(a)
-let result = eval(a);
-console.log(result); // eval fun string convert to Number
+let x = 13;
+eval('x = x + 30');
+console.log(x)
 
-let b = 90;
-let c = 70;
-let res = eval('b + c');
+let res = eval('3+4*3')
 console.log(res)
+
+let vass = "Hello"
+let code = `let ${vass}`
+console.log(`${vass}`)
+eval(code)
