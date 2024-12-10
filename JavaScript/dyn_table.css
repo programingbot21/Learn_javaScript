@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.info{
+    height: 50px;
+    width: 100rem;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}

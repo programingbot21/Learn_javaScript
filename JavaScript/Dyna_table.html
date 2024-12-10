@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="E:\JavaScript_Learn\JavaScript\dyn_table.css">
+</head>
+<body>
+  
+    <table class="tab-tbale">
+        <tr class="info">
+        <th>Name</th>
+        <th>Age</th>
+        <th>Birthday</th>
+        </tr>
+
+        <tbody id="myTable">
+
+        </tbody>
+    </table>
+
+    <script>
+        var myArr = [
+            {'name':'Michael', 'age':'30', 'birthdate': '12/2/2021'},
+            {'name':'Michael r', 'age':'33', 'birthdate': '12/2/2020'},
+            {'name':'Michael rg', 'age':'35', 'birthdate': '12/2/2024'},
+            {'name':'Michael g', 'age':'37', 'birthdate': '12/2/2028'},
+            
+        ]
+
+        builtable(myArr)
+
+        function builtable(data){
+            var table = document.getElementById('myTable')
+            for(var i=0; i< data.length; i++){
+                var row = `<tr>
+                                <td> ${data[i].name}</td>
+                                <td> ${data[i].age}</td>
+                                <td> ${data[i].birthdate}</td>
+                           </tr>`
+                table.innerHTML += row
+            }
+        }
+    </script>
+</body>
+</html>
