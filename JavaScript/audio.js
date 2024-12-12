@@ -16,6 +16,6 @@ let soundeffect = new Audio("final-old-tobacco-road-228853.mp3");
 // Play the sound effect whenever the user clicks the mouse
 
 document.addEventListener("click", () => {
-soundeffect.cloneNode().play(); // Load and play the
+soundeffect.cloneNode().play(); 
 
 });
