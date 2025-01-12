@@ -13,3 +13,10 @@ var yObj = {
     }
 };
 yObj.func()
+
+
+let load = cache( async() => {
+    console.log('Loading current user...');
+await new Promise((resolve) => setTimeout(resolve, 1000));
+    return {id:1, name:'kahkk'}
+})
