@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            /* display: flex; */
+            /* align-items: center; */
+            /* justify-content: space-between; */
+            /* gap: 10px; */
+            /* margin-top: 20px; */
+            display: flex;
+           text-align: center;
+            justify-content: space-between;
+           
+            margin-top: 20px;
+        }
+        div {
+            width: 1000px;
+            height: 200px;
+            background-color: lightblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <div id="container"></div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var div, container = document.getElementById('container');
+            for(var i = 0; i <= 5; i++){
+                div = document.createElement('div');
+                div.innerHTML = i + 0;
+                div.onclick = function(){
+                    alert(this.innerHTML);
+                }
+                container.appendChild(div);
+            }
+        });
+    </script>
+</body>
+</html>

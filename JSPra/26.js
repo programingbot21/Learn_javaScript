@@ -38,7 +38,6 @@ fetch('https://dummyjson.com/products?sortBy=title&order=asc')
 
 
 
-// fetch('https://jsonplaceholder.typicode.com/todos')
 fetch('https://jsonplaceholder.typicode.com/users')
 .then(res => res.json())
 .then(data => {
